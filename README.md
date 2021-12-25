@@ -5,7 +5,10 @@ Heavily inspired by
 [Write Yourself a Scheme](https://en.wikibooks.org/wiki/Write_Yourself_a_Scheme_in_48_Hours).
 
 # QuickStart Guide
-``runhaskell Lisp.hs "(+ 2 2 (* 3 3))"``
+```bash
+$runhaskell Lisp.hs "(+ 2 2 (* 3 3))"
+Number 13
+```
 
 # Building
 
