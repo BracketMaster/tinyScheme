@@ -1,6 +1,6 @@
 # tinyScheme
 
-The begginings of an humble implementation of a scheme compiler.
+The beginnings of an humble implementation of a scheme compiler.
 Heavily inspired by
 [Write Yourself a Scheme](https://en.wikibooks.org/wiki/Write_Yourself_a_Scheme_in_48_Hours).
 
@@ -21,3 +21,7 @@ ghc --make Lisp.hs
 ```bash
 ./Lisp "\"a string\""
 ```
+
+# TODO:
+ - [ ] Eliminate string in LispError if possible.
+       I prefer pure types.

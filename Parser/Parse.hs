@@ -1,5 +1,7 @@
 module Parser.Parse where
 
+import LispError
+import Control.Monad.Except(throwError)
 import Parser.Types
 import Text.ParserCombinators.Parsec hiding (spaces)
 
@@ -55,8 +57,8 @@ parseExpr  = parseAtom
                 char ')'
                 return x
 
-readExpr :: String -> LispAST
-readExpr input =    case parsed_symbol of
-                        Left  err -> String $ "No match: " ++ show err
-                        Right val -> val
-                    where parsed_symbol = parse parseExpr "lisp" input
+readExpr :: String -> ThrowsError LispAST
+readExpr input =    case parse_tree of
+                        Left  err -> throwError $ Parser  err
+                        Right val -> return val
+                    where parse_tree = parse parseExpr "lisp" input
