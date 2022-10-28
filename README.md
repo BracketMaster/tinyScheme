@@ -22,6 +22,9 @@ ghc --make Lisp.hs
 ./Lisp "\"a string\""
 ```
 
+# Haskell Language Server
+``hie.yaml`` provides explicit support for Haskell language server.
+
 # TODO:
  - [ ] Eliminate string in LispError if possible.
        I prefer pure types.
