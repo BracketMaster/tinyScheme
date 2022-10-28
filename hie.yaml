@@ -1,13 +1,13 @@
 cradle:
   direct:
     arguments:
-      - -i.
+      # - -i./*
       - Lisp.hs
       - LispError.hs
-      - -iParser/
+      # - -iParser/
       - Parser/Parse.hs
       - Parser/Types.hs
-      - -iEngine/
+      # - -iEngine/
       - Engine/Eval.hs
       - Engine/Reduce.hs
       - Wall
