@@ -1,6 +1,7 @@
 # Executables
 Main
 Lisp
+.vscode
 
 # Others
 dist/
