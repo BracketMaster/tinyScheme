@@ -1,10 +1,14 @@
 cradle:
   direct:
     arguments:
-      - Lisp.hs
-      - LispError.hs
-      - Parser/Parse.hs
-      - Parser/Types.hs
-      - Engine/Eval.hs
-      - Engine/Reduce.hs
-      - Wall
+      - -i
+      - -i.
+      - -i./Engine
+      - -i./Parser
+      - ./Lisp.hs
+      - ./LispError.hs
+      - ./Parser/Parse.hs
+      - ./Parser/Types.hs
+      - ./Engine/Eval.hs
+      - ./Engine/Reduce.hs
+      - ./Wall
